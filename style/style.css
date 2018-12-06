@@ -1,0 +1,314 @@
+@font-face {
+    font-family: 'Fira Sans';
+    src: local('Fira Sans Medium'), local('FiraSans-Medium'),
+        url('../fonts/FiraSans-Medium.woff2') format('woff2'),
+        url('../fonts/FiraSans-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: local('Roboto Italic'), local('Roboto-Italic'),
+        url('../fonts/Roboto-Italic.woff2') format('woff2'),
+        url('../fonts/Roboto-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: local('Roboto'), local('Roboto-Regular'),
+        url('../fonts/Roboto-Regular.woff2') format('woff2'),
+        url('../fonts/Roboto-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: local('Roboto Medium'), local('Roboto-Medium'),
+        url('../fonts/Roboto-Medium.woff2') format('woff2'),
+        url('../fonts/Roboto-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  background-color: #ede9e0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 1.875;
+  color: #737274;
+}
+
+a {
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 1.875;
+  color: #510fad;
+}
+.wrap {
+  width: 1024px;
+  margin: 0 auto;
+  background-image: url(../images/dog.png);
+  background-repeat: no-repeat;
+  background-position-x: 35px;
+  border: 1px solid #f00;
+}
+.container {
+  width: 940px;
+  margin: 0 auto;
+  border: 1px solid #000;
+}
+header {
+  border: 1px solid #0f0;
+}
+h2 {
+  font-size: 36px;
+  font-family: "Fira Sans", sans-serif;
+  color: #202020; 
+  margin-left: 323px;
+}
+
+h3 {
+  font-size: 24px;
+  font-family: "Fira Sans", sans-serif;
+  color: #202020;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/*header*/
+.page-header {
+  padding-top: 10px;
+}
+
+.page-header_container {
+display: flex;
+  justify-content: space-between;
+}
+/*Promo*/
+.promo {
+padding-bottom: 270px;
+}
+.page-title {
+  font-size: 48px;
+  font-family: "Fira Sans", sans-serif;
+  color: #202020;
+  margin-left: 323px; 
+  line-height: 1;
+}
+.page-subtitle {
+  margin-left: 323px;
+}
+
+/*nav-main*/
+
+.nav-main {
+  color: #202020;
+ 
+}
+.nav-item {
+  display: inline-block;
+  margin-right: 20px;
+}
+.nav-wrap {
+display: flex;
+align-items: baseline;
+}
+
+.nav-item a {
+  color: #202020;
+  font-size: 16px;
+}
+
+/*about*/
+.about {
+  background-color: #510fad;
+  color: #fff;
+  padding-top: 96px;
+  padding-bottom: 80px;
+}
+
+.about-title {
+  margin: 0;
+  margin-left: 323px;
+  color: #fff;
+}
+
+
+.about-subtitle {
+  margin-left: 323px;
+  color: #b1a2c6;
+ width: 358px;
+}
+.about-imgblock {
+  float: left; /*Почему не работает???*/
+  width: 460px;
+  margin-right: 20px;
+  margin-top: 50px;
+  box-shadow: 0px 20px 45px 5px rgba(0, 0, 0, 0.5);
+  border-radius: 9px;
+  overflow: hidden;
+}
+
+.about-img {
+  list-style: none
+  min-height: 1px;
+  vertical-align: top;
+}
+.about-linkblock {
+  /*display: flex;*/
+  display: inline-block;
+  margin-right: 20px;
+  margin-left: 500px;
+  margin-top: 0;
+  width: 460px;
+  /*margin: 20px;*/
+}
+.about-list {
+  padding-left: 20px;
+ }
+
+.about-linkblock a {
+  color: #ffec00;
+}
+
+.link {
+ display: flex; /*или block?*/
+ font-size: 16px;
+  font-family: "Fira Sans", sans-serif; 
+  background-image: url(../images/arrow_next.png);
+  background-position: right center;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  padding: 0;
+  text-align: left;
+  margin: 30px;
+  width: 220px;
+  }
+
+
+
+.dogs_dog {
+  width: 459px;
+  justify-content: space-between;
+  margin-right: 20px;
+}
+.dogs_dog:nth-child(2n) {
+  margin-right: 0;
+}
+
+.dogs .link {
+  background-image: url(../images/arrow_next_blue.png);
+  width: 190px;
+}
+
+.dogs_img {
+float: left;
+margin: 7px 20px 7px 0;
+}
+
+.reviews {
+display: flex;
+}
+
+.reviews_img {
+  float: top;
+  box-shadow: 0px 20px 45px 5px rgba(0, 0, 0, 0.5);
+  border-radius: 9px;
+  overflow: hidden;
+}
+
+.about-dogs_block {
+ 
+font-size: 0;
+}
+.about-dogs {
+  background-image: url(../images/backgroun_pattern.jpg);
+}
+
+.about-dogs_title {
+  color: #fff;
+  vertical-align: middle;
+}
+
+.about-dogs_text {
+  color: #a38dc3;
+  width: 440px;
+}
+
+.about-dogs-promo {
+display: inline-block;
+}
+
+.about-dogs_card {
+  display: inline-block;
+  background-color: #fff;
+  border-radius: 10px;
+  margin-left: 20px;
+  padding-right: 10px;
+  box-sizing: border-box;
+
+width: 205px;
+height: 290px;
+}
+
+
+.about-dogs_card p {
+  margin: 10px;
+}
+
+.about-dogs_img {
+  width: 205px;
+  height: 140px;
+  border-radius: 10px 10px 0 0;
+}
+
+.about-dogs_card a {
+  width: 145px;
+  background-image: url(../images/arrow_next_blue.png);
+}
+
+.page_footer_left {
+  display: flex;
+  flex-direction: column;
+}
+
+.page_footer_title { /*Как его подвинуть налево??*/
+  text-align: left;
+  padding-left: 0;
+}
+
+.page_footer_right {
+  display: flex;
+  flex-direction: column;
+  margin-top: 140px;
+}
+
+.page_footer_span {
+  color: #000;
+}
+
+.page_footer_nav_item {
+  text-decoration: none;
+  display: flex;
+  justify-content: space-around;/* Почему не работает??*/
+  padding: 10px;
+  list-style: none;
+  color: #202020;
+}

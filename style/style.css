@@ -304,13 +304,25 @@ height: 290px;
   color: #000;
 }
 
+.page_footer_nav {
+
+}
+
 .page_footer_nav_item {
-  text-decoration: none;
   display: flex;
+  text-decoration: none;
+  flex-direction: row;
   justify-content: space-around;/* Почему не работает??*/
   padding: 10px;
   list-style: none;
-  color: #202020;
+  
 }
 
-.
+.footer-link {
+  color: #8b8a8a;
+}
+
+.footer-socials{
+  margin-right: 3px;
+  display: block;
+}

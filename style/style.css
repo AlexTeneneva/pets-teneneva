@@ -58,27 +58,27 @@ a {
   line-height: 1.875;
   color: #510fad;
 }
+
 .wrap {
   width: 1024px;
   margin: 0 auto;
   background-image: url(../images/dog.png);
   background-repeat: no-repeat;
   background-position-x: 35px;
-  border: 1px solid #f00;
+  /*border: 1px solid #f00;*/
 }
 .container {
   width: 940px;
   margin: 0 auto;
-  border: 1px solid #000;
+  /*border: 1px solid #000;*/
 }
 header {
-  border: 1px solid #0f0;
+  /*border: 1px solid #0f0;*/
 }
 h2 {
   font-size: 36px;
   font-family: "Fira Sans", sans-serif;
   color: #202020; 
-  margin-left: 323px;
 }
 
 h3 {
@@ -103,7 +103,8 @@ display: flex;
 }
 /*Promo*/
 .promo {
-padding-bottom: 270px;
+  padding-bottom: 270px;
+  padding-top: 85px;
 }
 .page-title {
   font-size: 48px;
@@ -116,7 +117,12 @@ padding-bottom: 270px;
   margin-left: 323px;
 }
 
-/*nav-main*/
+.page-subtitle:before{
+content: '';
+border-left: 2px solid #510fad;
+padding-right: 9px;
+}
+
 
 .nav-main {
   color: #202020;
@@ -124,7 +130,7 @@ padding-bottom: 270px;
 }
 .nav-item {
   display: inline-block;
-  margin-right: 20px;
+  margin-right: 25px;
 }
 .nav-wrap {
 display: flex;
@@ -136,13 +142,46 @@ align-items: baseline;
   font-size: 16px;
 }
 
+.nav-item a:hover {
+  color: #510fad;
+}
+
+.tel:hover {
+  color: #737274;
+}
+
 /*about*/
 .about {
   background-color: #510fad;
   color: #fff;
   padding-top: 96px;
   padding-bottom: 80px;
+  position: relative;
+  margin-top: 80px;
+  margin-bottom: 80px;
+  }
+
+.about:before, 
+.about:after {
+  content: '';
+  background-image: url(../images/epixx_pets-wives.svg);
+  position: absolute;
+  display: block;
+  height: 80px;
+  width: 100%;
+  background-size: 102%;
+  background-repeat: no-repeat;
 }
+.about:before{
+  top: -80px;
+  background-position: -2px 0;
+}
+
+.about:after{
+  bottom: -80px;
+  background-position: -2px 100%;
+}
+
 
 .about-title {
   margin: 0;
@@ -150,17 +189,21 @@ align-items: baseline;
   color: #fff;
 }
 
+.about-container {
+  padding-top: 40px;
 
+}
 .about-subtitle {
   margin-left: 323px;
   color: #b1a2c6;
  width: 358px;
 }
+.about-dogs_block {
+  display: flex;
+}
 .about-imgblock {
-  float: left; /*Почему не работает???*/
   width: 460px;
   margin-right: 20px;
-  margin-top: 50px;
   box-shadow: 0px 20px 45px 5px rgba(0, 0, 0, 0.5);
   border-radius: 9px;
   overflow: hidden;
@@ -172,13 +215,10 @@ align-items: baseline;
   vertical-align: top;
 }
 .about-linkblock {
-  /*display: flex;*/
-  display: inline-block;
-  margin-right: 20px;
-  margin-left: 500px;
-  margin-top: 0;
   width: 460px;
-  /*margin: 20px;*/
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .about-list {
   padding-left: 20px;
@@ -188,8 +228,9 @@ align-items: baseline;
   color: #ffec00;
 }
 
+.about-link,
 .link {
- display: flex; /*или block?*/
+ display: flex;
  font-size: 16px;
   font-family: "Fira Sans", sans-serif; 
   background-image: url(../images/arrow_next.png);
@@ -198,12 +239,28 @@ align-items: baseline;
   box-sizing: border-box;
   padding: 0;
   text-align: left;
-  margin: 30px;
-  width: 220px;
   }
 
+.link {
+  width: 140px;
+}
 
-
+.about-link {
+  width: 220px;
+}
+.about-link:hover {
+  color: #b8adc8;
+  background-image: url(../images/arrow_next_grey.png);
+}
+.dogs {
+  padding-bottom: 140px;
+  padding-top: 140px;
+} 
+/*dogs*/
+.dogs-title {
+  text-align: center;
+  margin-bottom: 10px;
+}
 .dogs_dog {
   width: 459px;
   justify-content: space-between;
@@ -218,33 +275,64 @@ align-items: baseline;
   width: 190px;
 }
 
+
+.dogs .link:hover {
+  color: #737274;
+  background-image: url(../images/arrow_next_darkgrey.png);
+}
+
 .dogs_img {
-float: left;
-margin: 7px 20px 7px 0;
+  float: left;
+  margin: 7px 20px 7px 0;
+  border-radius: 50%;
+  overflow: hidden;
 }
 
+/*reviews*/
 .reviews {
-display: flex;
+  display: flex;
+}
+.reviews-title {
+  text-align: center;
+  width: 100%;
+}
+.reviews-text {
+  padding-top: 0px;
+  width: 400px;
+  margin-right: 20px;
+  color: #000;
+}
+.reviews-text_img {
+  width: 67px;
+  margin-right: 20px;
 }
 
+.reviews_img_block {
+    margin-bottom: 100px;
+    margin-top: 70px;
+}
 .reviews_img {
-  float: top;
+  width: 460px;
   box-shadow: 0px 20px 45px 5px rgba(0, 0, 0, 0.5);
   border-radius: 9px;
   overflow: hidden;
 }
 
 .about-dogs_block {
- 
-font-size: 0;
+ color: #000;
+
 }
 .about-dogs {
-  background-image: url(../images/backgroun_pattern.jpg);
+  background-image: url(../images/backgroun_pattern.png);
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-repeat: repeat;
 }
 
 .about-dogs_title {
   color: #fff;
   vertical-align: middle;
+  margin-left: 0;
 }
 
 .about-dogs_text {
@@ -253,28 +341,31 @@ font-size: 0;
 }
 
 .about-dogs-promo {
-display: inline-block;
+  width: 460px;
+  margin-right: 10px;
 }
-
+.about-dogs_block {
+  width: 460px;
+}
 .about-dogs_card {
   display: inline-block;
   background-color: #fff;
   border-radius: 10px;
-  margin-left: 20px;
+  margin-left: 10px;
   padding-right: 10px;
-  box-sizing: border-box;
-
-width: 205px;
-height: 290px;
+  width: 220px;
+  height: 290px;
 }
-
+.about-dogs_card:hover {
+  
+}
 
 .about-dogs_card p {
   margin: 10px;
 }
 
 .about-dogs_img {
-  width: 205px;
+  width: 220px;
   height: 140px;
   border-radius: 10px 10px 0 0;
 }
@@ -282,14 +373,77 @@ height: 290px;
 .about-dogs_card a {
   width: 145px;
   background-image: url(../images/arrow_next_blue.png);
+  margin-top: 20px;
+  margin-left: 10px;
 }
 
-.page_footer_left {
+.page-contacts {
+  padding-bottom: 100px;
+}
+
+.page_footer_title {
+  margin-top: 140px;
+  margin-bottom: 25px;
+}
+
+.address__title {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+.address__list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.address__list a{
+  color: #000;
+}
+
+.address__title {
+  vertical-align: middle;
+  margin-left: 0;
+  font-weight: normal;
+  color: #9c9a98;
+}
+
+.address__item {
+  width: 45%;
+}
+.address__value {
+  color: #000;
+  font-style: normal;
+}
+
+.footer-link {
+  color: #8b8a8a;
+  margin-right: 30px;
+}
+
+.page_footer_nav_item {
+  display: flex;
+  width: 700px;
+  padding: 10px;
+  list-style: none;
+  
+}
+.page_footer-bottom {
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  border-top: 2px solid  #d5d1ca;
+}
+
+.footer-socials{
+  margin-right: 3px;
+  display: block;
+}
+/*.page_footer_left {
   display: flex;
   flex-direction: column;
 }
 
-.page_footer_title { /*Как его подвинуть налево??*/
+.page_footer_title { 
   text-align: left;
   padding-left: 0;
 }
@@ -308,21 +462,68 @@ height: 290px;
 
 }
 
-.page_footer_nav_item {
-  display: flex;
-  text-decoration: none;
-  flex-direction: row;
-  justify-content: space-around;/* Почему не работает??*/
-  padding: 10px;
+
+
+*/
+
+.socials {
   list-style: none;
-  
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
 }
 
-.footer-link {
-  color: #8b8a8a;
+.socials__item {
+  margin-right: 5px;
 }
 
-.footer-socials{
-  margin-right: 3px;
+.socials__link {
   display: block;
+  width: 26px;
+  height: 26px;
+  text-decoration: none;
 }
+
+.socials__link--y-vk {
+  background-position: 0 -344px;
+}
+
+.socials__link--y-vk:hover {
+  background-position: 0 -372px;
+}
+
+.socials__link--y-f {
+  background-position: 0 -120px;
+}
+
+.socials__link--y-f:hover {
+  background-position: 0 -148px;
+}
+
+.socials__link--y-inst {
+  background-position: 0 -232px;
+}
+
+.socials__link--y-inst:hover {
+  background-position: 0 -260px;
+}
+
+.arrow,
+.social-icon  {background-image: url(../images/sprite.png); background-repeat: no-repeat;}
+.arrow_p_png {background-position: 0 0; width: 20px; height: 14px;}
+.arrow_p_hover_png {background-position: 0 -16px; width: 20px; height: 14px;}
+.arrow_y_png {background-position: 0 -32px; width: 20px; height: 14px;}
+.arrow_y_hover_png {background-position: 0 -48px; width: 20px; height: 14px;}
+.social_icon_facebook_p_png {background-position: 0 -64px; width: 26px; height: 26px;}
+.social_icon_facebook_p_hover_png {background-position: 0 -92px; width: 26px; height: 26px;}
+.socials__link--y-f {background-position: 0 -120px; width: 26px; height: 26px;}
+.social_icon_facebook_y_hover_png {background-position: 0 -148px; width: 26px; height: 26px;}
+.social_icon_instagram_p_png {background-position: 0 -176px; width: 26px; height: 26px;}
+.social_icon_instagram_p_hover_png {background-position: 0 -204px; width: 26px; height: 26px;}
+.socials__link--y-inst {background-position: 0 -232px; width: 26px; height: 26px;}
+.social_icon_instagram_y_hover_png {background-position: 0 -260px; width: 26px; height: 26px;}
+.vk_social_logotype_p_png {background-position: 0 -288
+  px; width: 26px; height: 26px;}
+.vk_social_logotype_p_hover_png {background-position: 0 -316px; width: 26px; height: 26px;}

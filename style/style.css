@@ -318,6 +318,10 @@ align-items: baseline;
   overflow: hidden;
 }
 
+.reviews_img_link:hover {
+  color: #737274;
+}
+
 .about-dogs_block {
  color: #000;
 

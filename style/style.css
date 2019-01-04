@@ -361,7 +361,7 @@ align-items: baseline;
   height: 290px;
 }
 .about-dogs_card:hover {
-  
+  box-shadow: 0 10px 30px rgba(0,0,0,0.25);
 }
 
 .about-dogs_card p {
@@ -422,6 +422,10 @@ align-items: baseline;
 .footer-link {
   color: #8b8a8a;
   margin-right: 30px;
+}
+
+.footer-link:hover {
+  color: #510fad;
 }
 
 .page_footer_nav_item {
